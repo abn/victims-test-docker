@@ -15,3 +15,5 @@ for d in $(find /usr/lib/jvm/ -maxdepth 1 -type d -name 'java-1.*-openjdk-*'); d
         victims-java-client --jar-info "$jar" >> ${OUTPUT}
     done;
 done
+
+cat ${OUTPUT}
